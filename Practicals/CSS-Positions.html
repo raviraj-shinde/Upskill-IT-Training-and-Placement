@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CSS Positions</title>
+  </head>
+  <body>
+    <div class="d-content">
+      <!--Navbar-->
+      <div class="navbar">
+        <div class="nv-1">
+          <h1>CSS-Position</h1>
+        </div>
+      </div>
+
+      <!--Introduction-->
+      <div class="d-introduction"></div>
+
+      <!--Try It-->
+      <div class="d-demonstration">
+        <h2>Try It</h2>
+        <div class="d-try">
+          <!--Input-->
+          <div class="d-input dt">
+            <div class="d-input-items it1">
+              <span>position: static;</span>
+            </div>
+            <div class="d-input-items it2">
+              <span>position: relative;</span>
+              <span>top: 40px;</span>
+              <span>left: 40px;</span>
+            </div>
+            <div class="d-input-items it3">
+              <span>position: absolute;</span>
+              <span>inset-inline-start: 40px;</span>
+              <span>inset-block-start: 40px;</span>
+            </div>
+            <div class="d-input-items it4">
+              <span>position: fixed;</span>
+              <span>top: 100px;</span>
+              <span>right: 0px;</span>
+            </div>
+            <div class="d-input-items it5">
+              <span>position: sticky;</span>
+              <span>top: 50px;</span>
+              <span>left: 90px;</span>
+            </div>
+          </div>
+
+          <!--Output-->
+          <div class="d-output dt">
+            <div class="d-para">
+              <div class="d-p1">
+                <div class="box box-1">1</div>
+                <div class="box box-2">2</div>
+                <div class="box box-3">3</div>
+
+                <p>
+                  To see the effect of sticky positioning, select the position:
+                  sticky option and scroll this container.
+                </p>
+
+                <p>
+                  The element will scroll along with its container, until it is
+                  at the top of the container (or reaches the offset specified
+                  in top), and will then stop scrolling, so it stays visible.
+                </p>
+
+                <p>
+                  The rest of this text is only supplied to make sure the
+                  container overflows, so as to enable you to scroll it and see
+                  the effect.
+                </p>
+              </div>
+              <hr style="margin-bottom: 1rem" />
+              <div class="d-p2">
+                <p>
+                  Far out in the uncharted backwaters of the unfashionable end
+                  of the western spiral arm of the Galaxy lies a small
+                  unregarded yellow sun. Orbiting this at a distance of roughly
+                  ninety-two million miles is an utterly insignificant little
+                  blue green planet whose ape-descended life forms are so
+                  amazingly primitive that they still think digital watches are
+                  a pretty neat idea. ninety-two million miles is an utterly
+                  insignificant little blue green planet whose ape-descended
+                  life forms are so amazingly primitive that they still think
+                  digital watches are a pretty neat idea.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
