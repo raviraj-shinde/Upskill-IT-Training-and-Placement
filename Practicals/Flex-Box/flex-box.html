@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="d-main">
+        <h1>Flex-Box</h1>
+
+        <div class="index">
+            <ul style="list-style-type: none;">
+                <li><a href="#what-is-flex">What Is Flex?</a></li>
+                <li><a href="#parent-properties">Parent Properties</a></li>
+                <li><a href="#child-properties">Child Properties</a></li>
+                <li><a href="#example">Code Example</a></li>
+            </ol>
+        </div>
+
+        <!-- CONTENT -->
+        <div class="content" id="what-is-flex">
+            <h2>What Is Flex-Box?</h2>
+            <p>
+                Flex-box is a one-dimensional layout system used to align items horizontally or vertically.
+                It gives responsive control without using float or manual positioning.
+            </p>
+        </div>
+
+        <div class="content" id="parent-properties">
+            <h2>Flex Parent Properties</h2>
+            <p>Applied to the container (parent element):</p>
+
+            <ul>
+                <li><b>display: flex;</b> activates flexbox</li>
+                <li><b>flex-direction:</b> row, row-reverse, column, column-reverse</li>
+                <li><b>flex-wrap:</b> wrap, nowrap, wrap-reverse</li>
+                <li><b>justify-content:</b> start, end, center, space-between, space-around, space-evenly</li>
+                <li><b>align-items:</b> start, end, center, stretch, baseline</li>
+                <li><b>align-content:</b> for multi-line flex wrap alignment</li>
+            </ul>
+
+            <h3>flex-direction:</h3>
+            <div class="direction">
+                <h4>flex-direction: row</h4>
+
+                <pre>
+display:flex;
+flex-direction: row; /*(default)*/
+                </pre>
+
+                <div class="box-container1">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+            </div>
+
+            <div class="direction">
+                <h4>flex-direction: column</h4>
+
+                <pre>
+display:flex;
+flex-direction: column;
+                </pre>
+
+                <div class="box-container2">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+            </div>
+
+
+            <div class="direction">
+                <h4>flex-direction: row-reverse</h4>
+
+                <pre>
+display:flex;
+flex-direction: row-reverse;
+                </pre>
+
+                <div class="box-container3">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+            </div>
+
+
+            <div class="direction">
+                <h4>flex-direction: column-reverse</h4>
+
+                <pre>
+display:flex;
+flex-direction: column-reverse;
+                </pre>
+
+                <div class="box-container4">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+            </div>
+
+
+
+            <!-- justify-conetnt -->
+                         <h3>flex-direction:</h3>
+            <div class="direction">
+                <h4>flex-direction: row</h4>
+
+                <pre>
+display:flex;
+flex-direction: row; /*(default)*/
+                </pre>
+
+                <div class="box-container1">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+            </div>
+
+            <div class="direction">
+                <h4>flex-direction: column</h4>
+
+                <pre>
+display:flex;
+flex-direction: column;
+                </pre>
+
+                <div class="box-container2">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+            </div>
+
+
+            <div class="direction">
+                <h4>flex-direction: row-reverse</h4>
+
+                <pre>
+display:flex;
+flex-direction: row-reverse;
+                </pre>
+
+                <div class="box-container3">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+            </div>
+
+
+            <div class="direction">
+                <h4>flex-direction: column-reverse</h4>
+
+                <pre>
+display:flex;
+flex-direction: column-reverse;
+                </pre>
+
+                <div class="box-container4">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="content" id="child-properties">
+            <h2>Flex Child Properties</h2>
+            <p>Applied to individual flex items:</p>
+
+            <ul>
+                <li><b>flex-grow:</b> how much space an item can take</li>
+                <li><b>flex-shrink:</b> how items shrink if space is less</li>
+                <li><b>flex-basis:</b> base width before growing/shrinking</li>
+                <li><b>flex:</b> shorthand (grow shrink basis)</li>
+                <li><b>align-self:</b> override align-items for single item</li>
+                <li><b>order:</b> changes item sequence</li>
+            </ul>
+        </div>
+
+        <div class="content" id="example">
+            <h2>Flex Example</h2>
+            <p>Basic flex layout:</p>
+
+            <div class="code">
+                .container {<br>
+                &nbsp;&nbsp;display: flex;<br>
+                &nbsp;&nbsp;flex-direction: row;<br>
+                &nbsp;&nbsp;justify-content: space-between;<br>
+                &nbsp;&nbsp;align-items: center;<br>
+                }<br><br>
+                .box {<br>
+                &nbsp;&nbsp;flex: 1;<br>
+                &nbsp;&nbsp;padding: 20px;<br>
+                &nbsp;&nbsp;background: lightgray;<br>
+                &nbsp;&nbsp;margin: 5px;<br>
+                }
+            </div>
+
+            <p>HTML:</p>
+
+            <div class="code">
+                &lt;div class="container"&gt;<br>
+                &nbsp;&nbsp;&lt;div class="box"&gt;A&lt;/div&gt;<br>
+                &nbsp;&nbsp;&lt;div class="box"&gt;B&lt;/div&gt;<br>
+                &nbsp;&nbsp;&lt;div class="box"&gt;C&lt;/div&gt;<br>
+                &lt;/div&gt;
+            </div>
+        </div>
+    </div>
+</body>
+</html>
