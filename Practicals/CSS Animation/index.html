@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Animation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <!-- Nav - Heading -->
+      <div class="d-heading">
+        <h1>CSS Animation</h1>
+      </div>
+
+      <!-- Introduction -->
+      <div class="d-introduction d" id="start">
+        <h2>CSS Animation</h2>
+        <ol type="1">
+          <li>
+            Transition
+            <ol type="i">
+              <li>transion-property</li>
+              <li>transion-duration</li>
+              <li>transion-timing-function</li>
+              <li>transion-delay</li>
+            </ol>
+          </li>
+
+          <li>KeyFrame Animation</li>
+        </ol>
+      </div>
+
+      <!-- Transition -->
+      <div class="d-transition d">
+        <h2>Transition</h2>
+        <ol type="i">
+          <li>
+            <span>transition-property</span> - Specifies which CSS property will
+            animate.
+            <ul>
+              <li>width</li>
+              <li>opacity</li>
+              <li>transform</li>
+              <li>background-color</li>
+              <li>etc</li>
+            </ul>
+          </li>
+
+          <li>
+            <span>transition-duration</span> - Defines how long the animation
+            takes. (ex., 0.5s)
+          </li>
+
+          <li>
+            <span>transition-timing-function</span> - Controls the speed pattern
+            of the animation.
+            <ul>
+              <li>ease</li>
+              <li>linear</li>
+              <li>ease-in</li>
+              <li>ease-out</li>
+              <li>ease-in-out</li>
+              <li>step-start</li>
+              <li>step-end</li>
+              <li>steps()</li>
+              <li>cubic-bezier()</li>
+            </ul>
+          </li>
+
+          <li>
+            <span>transition-delay </span>- Adds a waiting time before animation
+            starts. (ex., 0.5s)
+          </li>
+        </ol>
+      </div>
+
+      <!-- Transition -->
+      <div class="d-implementation d" id="last">
+        <h2>Implementation</h2>
+
+        <ul>
+          <h4>.box</h4>
+          <li>transition-property: width</li>
+          <li>transition-duration: 2s;</li>
+          <li>transition-timing-function: ease-out;</li>
+          <li>transition-delay: 0.2s;</li>
+        </ul>
+
+        <ul>
+          <h4>.box:hover</h4>
+          <li>width: 95%;</li>
+          <li>background-color: red;</li>
+        </ul>
+
+        <div class="example"><span id="arrow">👈🏻</span></div>
+      </div>
+    </div>
+
+    <div class="side-menu">
+        <a href="#start"><div>🔺</div></a>
+        <a href="#last"><div>🔻</div></a>
+    </div>
+
+  </body>
+</html>
