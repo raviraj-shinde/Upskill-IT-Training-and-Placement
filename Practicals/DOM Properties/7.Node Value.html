@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nodeValue</title>
+  </head>
+  <body>
+    <h1>nodeValue</h1>
+    <p>nodeValue gets or sets the value of a text node.</p>
+    <hr />
+
+    <p id="p">Orignal Text</p>
+    <button onclick="demo7()">Change</button>
+
+    <script>
+      function demo7() {
+        let p = document.getElementById("p");
+        let textNode = p.firstChild;
+
+        // GET
+        console.log(textNode.nodeValue);
+        //set
+        textNode.nodeValue = "Replaced Text through .firstChild()";
+      }
+    </script>
+  </body>
+</html>

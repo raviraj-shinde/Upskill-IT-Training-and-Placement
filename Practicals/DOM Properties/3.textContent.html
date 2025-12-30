@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>textContent</title>
+</head>
+<body>
+    <h1>3] textContent </h1><hr>
+    <p>textContent <b>returns all text, including hidden</b> elements.</p>
+    <hr>
+
+    <h3 id="a3">
+        Oringal <span style="display: none;">hidden text</span> 1.
+    </h3>
+    <button onclick="demo3()">Change</button>
+
+    <script>
+        function demo3()
+        {
+            let x = document.getElementById("a3");
+            //get
+            console.log(x.textContent);
+            //set
+            x.textContent = "Replaced Sample Text";
+        }
+    </script>
+</body>
+</html>

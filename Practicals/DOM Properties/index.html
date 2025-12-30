@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>DOM Properties</title>
+  </head>
+  <body>
+    <div id="d-main">
+      <div id="d-heading"><h3>DOM Properties</h3></div>
+      <div id="d-index">
+        <ul>
+          <li>1.innerHTML</li>
+          <li>2.innerText</li>
+          <li>3.textContent</li>
+          <li>4.outerHTML</li>
+          <li>5.outertext</li>
+          <li>6.value</li>
+          <li>7.Node Value</li>
+        </ul>
+      </div>
+
+      <div id="d-show-topic">
+        <iframe id="iframee" src="1.innerHTML.html" frameborder="0"></iframe>
+      </div>
+
+      <script>
+        document.querySelectorAll("li").forEach((li) => {
+          li.addEventListener("click", function () {
+            const iframe = document.querySelector("iframe");
+            iframe.src = `${this.innerText}.html`;
+          });
+        });
+
+      </script>
+    </div>
+  </body>
+</html>

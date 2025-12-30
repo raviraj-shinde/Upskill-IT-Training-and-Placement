@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div>
+      <h1>2] xcs</h1>
+      <p>innerText returns <b>only the visible text</b> inside an element.</p>
+      <hr />
+
+      <h3 id="a2">Orignal <span style="display: none">Hidden Text</span> 1</h3>
+      <button onclick="demo2()">Change</button>
+    </div>
+
+    <script>
+      function demo2() {
+        const z = document.getElementById("a2");
+
+        // get
+        console.log(z.innerHTML);
+
+        // set
+        z.innerHTML = "<p>Replaced <b>HTML</b> Content</p>";
+      }
+    </script>
+  </body>
+</html>

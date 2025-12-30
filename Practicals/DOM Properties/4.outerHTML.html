@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>outerHTML</title>
+</head>
+<body>
+    <h1>4] outerHTML</h1>
+    <p>outerHTML <b>gets or replaces</b> the <b>entire element including itself</b>.</p>
+
+    <h3 id="a4">Orignal Text</h3>
+    <button onclick="demo4()">Replace</button>
+
+    <script>
+        function demo4()
+        {
+            let z = document.getElementById("a4");
+            //get
+            console.log(z.outerHTML);
+            //set
+            z.outerHTML = "<p>Replaced &lt;p&gt; text</P>"
+        }
+    </script>
+</body>
+</html>

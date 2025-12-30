@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>value</title>
+</head>
+<body>
+    <h1>6] value</h1>
+    <p>value is used to <b>get or set input field data</b>.</p>
+    <hr>
+
+    <input type="text" id="a6" value="Orignal Value">
+    <button onclick="demo6()">Change</button>
+
+    <script>
+        function demo6()
+        {
+            let z = document.getElementById("a6");
+            //get
+            console.log(z.value);
+            alert(z.value);
+            //set
+            z.value = "Replaced Value";
+            alert(z.value);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>outerText</title>
+</head>
+<body>
+    <h1>
+        5] outerText
+    </h1>
+    <p>
+        outerText <b>replaces the entire element</b> with plain text.
+    </p>
+    <hr>
+
+    <div>
+        <h6 id="a5">Orignal Text</h6>
+    </div>
+    <button onclick="demo5()">Change</button>
+
+    <script>
+        function demo5()
+        {
+            let z = document.getElementById("a5");
+            //get
+            console.log(z.outerText);
+            //set
+            z.outerText = "Replaced Text";
+        }
+    </script>
+</body>
+</html>
