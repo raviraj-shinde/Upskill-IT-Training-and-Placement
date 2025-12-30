@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manupulation</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="d-main">
+      <div id="d-heading"><h1>DOM Manupulation</h1></div>
+
+      <div id="d-index">
+        <ul>
+          <li>getAttribute</li>
+          <li>setAttribute</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="">
+        <div id="d-video">
+            <video id="video" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4" controls></video>
+        </div>
+
+        <button onclick="videoSource()">Change Video</button>
+
+    </div>
+
+    <script>
+        function videoSource(){
+            const video = document.getElementById("video");
+
+            console.log(video.getAttribute("src"));
+            video.setAttribute("src", "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4");
+        }
+    </script>
+
+  </body>
+</html>
