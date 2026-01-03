@@ -1,0 +1,88 @@
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+:root {
+  /*Container*/
+  --CTNRpadding: 20px 20px;
+  --margin-btm: 1rem;
+  --borderbtmClr: rgb(128, 3, 3);
+  --box-sh-clr: gray;
+
+  /*Theme*/
+  --bg-color: white;
+  --bg-color2: black;
+  --clr: black;
+  --clr2: white;
+}
+
+
+/* Main CONTAINER*/
+#d-main {
+  padding: 0 1rem;
+  margin: 0 auto;
+  background-color: var(--bg-color);
+  color: var(--clr);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*HEADING CONTAINER*/
+#d-heading {
+  position: sticky;
+  top: 0;
+  margin-bottom: var(--margin-btm);
+  text-align: center;
+}
+
+#d-heading h1 {
+  background-color: var(--bg-color2);
+  color: var(--clr2);
+  padding: 0.5rem 1rem;
+}
+
+/*INDEX CONTAINER*/
+#d-index {
+  margin-bottom: var(--margin-btm);
+  padding: var(--CTNRpadding);
+  border-bottom: 2px solid var(--borderbtmClr) inset;
+  border: 1px solid rgb(166, 161, 161);
+  border-radius: 5px;
+}
+
+
+/*NOTES CONTAINERS*/
+#d-notes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.d-notes {
+padding: var(--CTNRpadding);
+  margin-bottom: var(--margin-btm);
+  border-bottom: 2px solid var(--borderbtmClr) inset;
+  box-shadow: 0 0 5px var(--box-sh-clr);
+}
+
+.d-notes > h2 {
+  border-left: var(--bg-color2);
+  border-radius: 5px;
+  padding-left: 0.5rem;
+}

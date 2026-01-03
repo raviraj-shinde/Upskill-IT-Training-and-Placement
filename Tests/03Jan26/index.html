@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test 2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="d-main">
+      <div id="d-heading"><h1>Test</h1></div>
+
+      <!--Index-->
+      <div id="d-index">
+        <ul>
+          <a href="#"><li>1.Greeting MSG</li></a>
+          <a href="#"><li>2.Odd and Even Identifier</li></a>
+        </ul>
+      </div>
+
+      <!--Sub Main Container-->
+      <div id="d-sub-container">
+
+        <!--1.Greeting MSG-->
+        <div class="d-sub">
+          <div id="d-heading2"><h2>1. Greeting MSG</h2></div>
+          <button class="btn" onclick="greet()">Click here too see👀</button>
+          <div id="d-hidden-msg"></div>
+        </div>
+
+        <!--2.Odd and Even Identifier-->
+        <div class="d-sub">
+          <div id="d-heading2"><h2>2. Odd and Even Identifier</h2></div>
+
+          <div id="d-test">
+            <div class="test">
+                <label>Enter a Whole Number: <input class="number-input" id="test-num" type="number"></label>
+                <button class="btn" onclick="test()">Test</button>
+            </div>
+            <div id="d-output"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

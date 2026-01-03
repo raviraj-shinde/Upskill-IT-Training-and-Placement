@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="d-main">
+      <div id="d-heading"><h1>DOM</h1></div>
+      <div id="d-index">
+        <ul>
+          <a href="#"><li>1. DOM Element Access</li></a>
+          <a href="#"><li>2. Create and Append Element</li></a>
+          <a href="#"><li>3. DOM Events</li></a>
+        </ul>
+      </div>
+      <div id="d-notes-container">
+        <div class="d-notes">
+          <div id="d-heading2"><h2>DOM Element Access</h2></div>
+
+          <ul>
+            <li>getElementById()</li>
+            <li>getElementByClass()</li>
+            <li>querySelector() - Gives First matched element</li>
+            <li>querySelectorAll()</li>
+          </ul>
+        </div>
+
+        <div class="d-notes">
+          <div id="d-heading2"><h2>Create and Append Element</h2></div>
+
+          <ul>
+            <li>document.createElement("")</li>
+            <li>ele.appendChild(-)</li>
+            <li>ele.remove() - removes ele from DOM</li>
+          </ul>
+
+          <div id="d-test">
+            <div>
+              <ul id="test-ol">
+                <li>Default li</li>
+              </ul>
+            </div>
+            <div>
+              <button onclick="createLi()">Create li</button>
+              <button onclick="appendLi()">Append to ul</button>
+              <button onclick="CreateNAppend()">Create and Append</button>
+              <button onclick="removeLastLi()">Remove last li</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
