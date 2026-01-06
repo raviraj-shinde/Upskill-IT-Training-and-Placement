@@ -1,0 +1,72 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch Case Implementation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="d-flex">
+      <!--Flex 1-->
+      <div id="flex1">
+        <div>
+          <label
+            >Enter a number: <input type="number" id="inp1" min="0"
+          /></label>
+          <label
+            >Enter a number: <input type="number" id="inp2" min="0"
+          /></label>
+
+          <br />
+          <br />
+          <!--buttons-->
+          <button onclick="claculate(1)">Add (1)</button>
+          <button onclick="claculate(2)">Substract (2)</button>
+          <button onclick="claculate(3)">Multiply (3)</button>
+          <button onclick="claculate(4)">Dvivde (4)</button>
+
+          <span style="font-weight: 700; padding: 0px 10px">OR</span>
+
+          <label
+            >Select Case:<input
+              type="text"
+              id="exp"
+              placeholder="'+'' or '-' or '*' or '/'"
+          /></label>
+          <button onclick="claculate2()">calculate</button>
+        </div>
+
+        <div>
+          <label>Enter a Number: <input type="number" id="num" /></label>
+          <button onclick="printDecreasing()">Print Decreasing Order</button>
+        </div>
+
+        <div>
+          <pre>
+                let i = 0;
+                while(i <= 3){
+                    let j = 1;
+                    while(j <= 3){
+                        //print j
+                        j++;
+                    }
+                    //next line
+                    i++;
+                }
+            </pre
+          >
+          <button onclick="executeCode()">Execute code</button>
+        </div>
+      </div>
+
+      <!--Flex 2 : output -->
+      <div id="d-output">
+        <h5>Output:</h5>
+        <div id="output"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
