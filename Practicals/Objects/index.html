@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <script>
+
+        let employe = {
+            name: "sushant",
+            age: -10,
+            company: {
+                name: "abc",
+                city: "Pune",
+                Year: 2000
+            }
+        }
+
+        for (let ele in employe) {
+            console.log(employe[ele]["name"] + "\n");
+        }
+
+        delete employe.age;
+        console.log(employe);
+    </script>
+</body>
+</html>

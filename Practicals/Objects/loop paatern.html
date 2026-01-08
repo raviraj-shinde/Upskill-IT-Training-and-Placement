@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multiplication Grid</title>
+    
+    <style>
+        #d-grid {
+            display: grid;
+            grid-template-columns: repeat(10, 60px);
+            gap: 6px;
+        }
+
+        .cell {
+            border: 1px solid gray;
+            text-align: center;
+            padding: 8px;
+        }
+
+        .d-flex{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="d-flex">
+    <div id="d-grid"></div>
+</div>
+
+<script>
+    let grid = document.getElementById("d-grid");
+
+    for (let i = 1; i <= 10; i++) {
+        for (let j = 1; j <= 10; j++) {
+
+            let div = document.createElement("div");
+            div.className = "cell";
+            div.innerText = i * j;
+            grid.appendChild(div);
+        }
+    }
+</script>
+
+</body>
+</html>
