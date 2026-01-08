@@ -1,0 +1,81 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loops Practice</title>
+
+    <style>
+      table {
+        border-spacing: 10px;
+      }
+
+      td {
+        border: 0px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <hr />
+
+    <table>
+      <script>
+        for (let i = 4; i >= 1; i--) {
+          document.write("<tr>");
+          for (let j = 1; j <= i; j++) {
+            document.write(`<td>${j}</td>`);
+          }
+          document.write("</tr>");
+        }
+      </script>
+    </table>
+
+    <hr />
+
+    <table>
+      <script>
+        for (let i = 4; i >= 1; i--) {
+          document.write("<tr>");
+
+          for (let j = 1; j <= 4; j++) {
+            if (j >= i) {
+              document.write(`<td>*</td>`);
+            } else {
+              document.write(`<td>&nbsp;</td>`);
+            }
+          }
+
+          document.write("</tr>");
+        }
+      </script>
+    </table>
+
+    <hr />
+
+    <table>
+      <script>
+
+        for (let i = 1; i <= 7; i++) {
+          document.write("<tr>");
+
+          if (i <= 4) {
+            for (let j = 1; j <= i; j++) {
+              document.write(`<td>${j}</td>`);
+            }
+
+          } else {
+
+            for (let j = 1; j <= 4-(i%4) ; j++) {
+              document.write(`<td>${j}</td>`);
+            }
+
+          }
+
+          document.write("</tr>");
+        }
+
+      </script>
+    </table>
+
+    <hr />
+  </body>
+</html>
