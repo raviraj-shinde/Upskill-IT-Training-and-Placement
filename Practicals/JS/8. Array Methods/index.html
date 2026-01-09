@@ -1,0 +1,55 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Methods</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+     <div class="d-flex">
+      <!--Flex 1-->
+      <div id="flex1">
+        <div>
+          <pre>
+//Array Methods
+let arr = [1, "two", 3, 5];
+
+arr.push("six");  
+printToOutput(arr);
+
+arr.pop();
+printToOutput(arr);
+
+arr.unshift("zero"); 
+printToOutput(arr);
+
+arr.shift();
+printToOutput(arr);
+
+
+let arr2 = [10, 20, 30];
+let combinedArr = arr.concat(arr2);
+printToOutput(combinedArr);
+
+let slicedArray = combinedArr.slice(4,7); 
+printToOutput(slicedArray);
+
+combinedArr.splice(4,3,0,2,3); 
+printToOutput(combinedArr);
+
+
+          </pre>
+        </div>
+      </div>
+
+      <!--Flex 2 : output -->
+      <div id="d-output">
+        <h5>Output:</h5>
+        <div id="output"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
