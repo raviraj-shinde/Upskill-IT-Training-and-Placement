@@ -1,0 +1,102 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="d-flex">
+      <!--Flex 1-->
+      <div id="flex1">
+        <!-- Div 1 -->
+        <div>
+          <ul>
+            <li>
+              <strong>Mouse Events</strong>
+              <ul>
+                <li>click</li>
+                <li>dblclick</li>
+                <li>mouseover</li>
+                <li>mouseout</li>
+                <li>mousemove</li>
+              </ul>
+            </li>
+
+            <li>
+              <strong>Keyboard Events</strong>
+              <ul>
+                <li>keydown</li>
+                <li>keyup</li>
+              </ul>
+            </li>
+
+            <li>
+              <strong>Form Events</strong>
+              <ul>
+                <li>submit</li>
+                <li>change</li>
+                <li>focus</li>
+                <li>blur</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Div 2 -->
+        <div>
+          <h3>Mouse Events</h3>
+
+          <div class="d-mouce1">
+            <button id="click">Click</button>
+            <button id="dbl">Double Click</button>
+          </div>
+
+          <div class="d-mouce2">
+            <div id="mo">Mouse Over</div>
+            <div id="mout">Mouse Out</div>
+            <div id="mv">Mouse Move</div>
+          </div>
+        </div>
+
+        <!-- Div 3 -->
+        <div>
+          <h3>Keyboard Events</h3>
+
+          <div class="d-content">
+            <label>Key Up: <input id="inp1" type="text" /></label>
+            <br />
+            <label>Key down: <input id="inp2" type="text" /></label>
+          </div>
+        </div>
+
+        <!-- Div 4 -->
+        <div>
+          <h3>Keyboard Events</h3>
+
+          <div class="d-content">
+
+            <fieldset>
+              <legend>Form Events</legend>
+
+              <form id="formm">
+                <label>On Value Change (change): <input type="text" id="finp"></label>
+                <button>Submit</button>
+              </form>
+            </fieldset>
+            
+        </div>
+
+      </div>
+
+      <!--Flex 2 : output -->
+      <div id="d-output">
+        <h5>Output:</h5>
+        <button onclick="clearOutput()">Clear Output</button>
+        <div id="output"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
