@@ -29,6 +29,8 @@ function showArrEle() {
 
 showArrEle();
 
+printToOutput("\n");
+
 /****************************** 3 *************************************/
 
 //Reverse an Array
@@ -39,7 +41,9 @@ for (let i = 0, j = arr.length - 1; i < j; i++, j--) {
   arr[i] = arr[i] ^ arr[j];
 }
 
-printToOutput("Reversed Array" + arr);
+printToOutput("Reversed Array: " + arr);
+printToOutput("\n");
+
 
 /****************************** 4 *************************************/
 
@@ -53,11 +57,15 @@ let arr2 = [
 ];
 
 printToOutput(arr2);
+printToOutput("\n");
+
 
 /***************************** 5 **************************************/
 
 let sum = arr.reduce((sum, num) => sum + num, 0);
 printToOutput("Sum of inpput arr:- " + sum);
+printToOutput("\n");
+
 
 /***************************** 6 **************************************/
 
@@ -75,5 +83,15 @@ for (let i = 0; i < arr3.length; i++) {
   data += "], ";
 }
 printToOutput(data + " ]");
+printToOutput("\n");
 
-/***************************** Transpose 2D Array**************************************/
+
+
+/***************************** Sort Array **************************************/
+
+let arr4 = [...arr].sort((a, b) => a-b); //ASC
+let arr5 = [...arr].sort((a, b) => b-a); //DSC
+
+printToOutput("Ascending Order Sort: " + arr4);
+printToOutput("Descending Order Sort: " + arr5);
+printToOutput("\n");
