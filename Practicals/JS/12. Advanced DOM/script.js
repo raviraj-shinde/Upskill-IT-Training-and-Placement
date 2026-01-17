@@ -15,6 +15,7 @@ function clearOutput() {
 
 let inp = document.getElementById("inp-pass");
 let btn = document.getElementById("btn-toggle");
+
 let showPass = 0;
 
 function toggleShow () {
