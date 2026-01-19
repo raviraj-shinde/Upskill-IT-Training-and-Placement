@@ -1,0 +1,47 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="d-flex">
+      <!--Flex 1-->
+      <div id="flex1">
+        <!-- Div 1 -->
+        <div>
+          <h2>📌 Binding and Unbiinding Example</h2>
+          <button id="btn">Open Link</button>
+        </div>
+
+        <!-- Div 2 -->
+        <div>
+          <h2>📌 Show/Hide/Toggle - Visibility Filter</h2>
+          <button id="btn2">Hide Div</button>
+          <button id="btn3">Toggle</button>
+          <div id="d-visibility">Div Says: Hello</div>
+        </div>
+
+        <!-- Div 3 -->
+        <div>
+          <h2>📌 Event Object</h2>
+          <div id="box-container">
+            <div id="box">Click</div>
+            <div id="box2">Double Click</div>
+            <div id="box3">Mouse Move & Out</div>
+          </div>
+        </div>
+      </div>
+
+      <!--Flex 2 : output -->
+      <div id="d-output">
+        <h5>Output:</h5>
+        <button onclick="clearOutput()">Clear Output</button>
+        <div id="output"></div>
+      </div>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</html>
