@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anagram</title>
+  </head>
+  <body>
+    <script>
+
+        setTimeout(() => {
+            abc();
+        }, 2000)
+
+      function abc() {
+        
+        let str1 = prompt("Enter 1st String: "); //race
+        let str2 = prompt("Enter 2nd String: ");; //care
+
+        let set = new Set();
+
+        if (str1.length !== str2.length) {
+          console.log("Not Anagram");
+          return;
+        }
+
+        for (let ch of str1) {
+          set.add(ch);
+        }
+
+        for (let ch of str2) {
+          if (!set.has(ch)) {
+            console.log("Not Anagram");
+            return;
+          }
+        }
+
+        console.log("Given Strings are anagrams");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Armstrong</title>
+  </head>
+  <body>
+    <script>
+      let sum = 0;
+      
+      let number = Number(prompt("Enter a Number"));
+      let num = number;
+
+      while (num > 0) {
+        let lastDigit = num % 10;
+        sum += lastDigit * lastDigit * lastDigit;
+        num = Math.floor((num /= 10));
+      }
+
+      if (sum === number) {
+        console.log("Given Number is Armstrong: " + number);
+      } else {
+        console.log("Not Armstrong");
+      }
+      
+    </script>
+  </body>
+</html>

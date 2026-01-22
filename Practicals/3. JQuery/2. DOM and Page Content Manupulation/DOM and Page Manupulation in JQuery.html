@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM and Page Content Manupulation in JQuery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="d-main">
+      <h1>DOM and Page Content Manupulation in JQuery</h1>
+
+      <div id="flex-container">
+        <!--flex-1-->
+        <div id="flex-1">
+          <h3>Manupulating HTML Content</h3>
+
+          <h4>Methods</h4>
+          <ul>
+            <li>
+              html() - Gets or sets HTML content (includes tags) inside an
+              element.
+            </li>
+            <li>
+              text() - Gets or sets the plain text (no HTML tags) of selected
+              elements.
+            </li>
+            <li>
+              val() - Gets or sets the value of form fields (input, select,
+              textarea).
+            </li>
+          </ul>
+
+          <h4>Demonstration:</h4>
+          <div id="d-demonstration">
+            <table>
+              <tr>
+                <td colspan="2">
+                  <div class="main-box">
+                    <div class="default-child-box">
+                      This the text inside child-div
+                    </div>
+                  </div>
+                </td>
+                <td><input type="text" placeholder="Type Value" /></td>
+              </tr>
+
+              <tr>
+                <td><button>Change HTML Content</button></td>
+                <td><button>Change Text</button></td>
+                <td><button>Get Val</button></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <!--flex-2-->
+        <div id="flex-2">
+          <h3>Adding Elements</h3>
+
+          <h4>Methods</h4>
+
+          <table>
+            <caption>
+              Add new Element...
+            </caption>
+
+            <tr>
+              <th><span class="sp-highlight">In the</span> selected Element</th>
+              <th>
+                <span class="sp-highlight">Outside</span> the selected the
+                Element
+              </th>
+            </tr>
+
+            <tr>
+              <ul>
+                <li>prepend() - at the beginning.</li>
+                <li>append() - at the end.</li>
+              </ul>
+            </tr>
+
+            <tr>
+              <ul>
+                <li>before() - before the element.</li>
+                <li>after() - after the element.</li>
+              </ul>
+            </tr>
+          </table>
+
+          <h4>Demonstration:</h4>
+          <div id="d-demonstration">
+            <table>
+              <tr>
+                <td>
+                  <div class="main-box">
+                    <div class="default-child-box"></div>
+                  </div>
+                </td>
+                <td>
+                  <div class="main-box">
+                    <div class="default-child-box"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button>prepend() new div</button>
+                  <button>append() new div</button>
+                </td>
+                <td>
+                  <button>Add new d before()</button>
+                  <button>Add new d after()</button>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <!--flex-3-->
+        <div id="flex-3">
+          <h3>Removing Elements</h3>
+
+          <h4>Methods</h4>
+          <ul>
+            <li>remove() → Deletes the element itself from DOM.</li>
+            <li>empty() → Clears inner content but keeps element</li>
+          </ul>
+
+          <h4>Demonstration:</h4>
+          <div id="d-demonstration">
+            <table>
+              <tr>
+                <td colspan="2">
+                  <div class="main-box">
+                    <div class="default-child-box"></div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td><button>remove() div</button></td>
+                <td>Change Text</td>
+                <td>Get Val</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="http://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</html>
